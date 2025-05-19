@@ -3,14 +3,18 @@ import PyInstaller.__main__
 from os import remove
 from shutil import rmtree, move
 from os.path import exists
+from termcolor import colored
 
-print("[ INFO ] Starting Building Process...")
-print("[ INFO ] Removing old builds...")
+done = colored("[ DONE ]", "green")
+info = colored("[ INFO ]", "yellow")
+
+print(info, "Starting Building Process...")
+print(info, "Removing old builds...")
 
 if exists("PlinxMC.exe"):
     remove("PLinxMC.exe")
 
-print("[ INFO ] Building Executeable (May take a minute)...")
+print(info, "Building Executeable (May take a while)...")
 
 PyInstaller.__main__.run([
     'app.py',
@@ -25,20 +29,20 @@ PyInstaller.__main__.run([
 
 ])
 
-print("[ INFO ] Removing Temporary Build files...")
+print(info, "Removing Temporary Build files...")
 if exists("PlinxMC.spec"):
     remove("PlinxMC.spec")
 
 if exists("build"):
     rmtree("build")
 
-print("[ INFO ] Moving Exe to root dir...")
+print(info, "Moving Exe to root dir...")
 if exists("dist/PlinxMC.exe"):
     move("dist/PlinxMC.exe", "PlinxMC.exe")
 
-print("[ INFO ] Clean up folders...")
+print(info, "Clean up folders...")
 if exists("dist"):
     rmtree("dist")
 
-print("[ DONE ] Building Process completed! Build can be found at PlinxMC.exe")
-print("[ DONE ] You can now close this window")
+print(done, "Building Process completed! Build can be found at PlinxMC.exe")
+print(done, "You can now close this window")
