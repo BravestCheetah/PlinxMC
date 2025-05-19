@@ -1,9 +1,11 @@
 import PyInstaller.__main__
 
-from os import remove
+from os import remove, system
 from shutil import rmtree, move
 from os.path import exists
 from termcolor import colored
+
+system("clear")
 
 done = colored("[ DONE ]", "green")
 info = colored("[ INFO ]", "yellow")
