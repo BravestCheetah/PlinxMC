@@ -1,11 +1,15 @@
 import PyInstaller.__main__
 
 from os import remove, system
+from platform import system as get_os
 from shutil import rmtree, move
 from os.path import exists
 from termcolor import colored
 
-system("clear")
+if get_os() == "Windows":
+    system("cls")
+else:
+    system("clear")
 
 done = colored("[ DONE ]", "green")
 info = colored("[ INFO ]", "yellow")
