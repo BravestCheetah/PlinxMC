@@ -1,12 +1,16 @@
 import minecraft_launcher_lib as mc
+import customtkinter as ctk
 
 import classes.dir_paths
 import classes.installations
 
 
-paths = classes.dir_paths.Paths()
+class PlinxMC(ctk.CTk):
+    def __init__(self):
+        super().__init__()
 
-if input(":::->  ") == "1":
-    classes.installations.install_version("1.20.4", paths.mcdir)
-else:
-    classes.installations.launch_version("1.20.4", paths.mcdir, mc.utils.generate_test_options())
+        self.title("PlinxMC - A lightweight Launcher")
+        self.geometry("1000x600")
+
+app = PlinxMC()
+app.mainloop()
