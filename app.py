@@ -1,18 +1,9 @@
-#-----------------------------------------
-#   IMPORTS
-#-----------------------------------------
-
-#Import Libraries
 import minecraft_launcher_lib as mc
 
-#Import scripts and classes
 import classes.dir_paths
+import classes.installations
 
 
-
-#-----------------------------------------
-#   Init's
-#-----------------------------------------
 
 paths = classes.dir_paths.Paths()
 
