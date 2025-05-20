@@ -1,6 +1,6 @@
 from os import getenv, path
 
-class Paths():
+class Dirs():
     def __init__(self):
 
         self.appdata = getenv("APPDATA")
