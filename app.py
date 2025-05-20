@@ -1,7 +1,18 @@
+#-----------------------------------------
+#   IMPORTS
+#-----------------------------------------
+
+#Import Libraries
 import minecraft_launcher_lib as mc
-from os import getenv, path
+
+#Import scripts and classes
+import classes.dir_paths
 
 
-appdata = getenv("APPDATA")
-mcdir = path.join(appdata, "PlinxMC", "Installations")
-cnfgdir = path.join(appdata, "PLinxMC", "Config")
+
+#-----------------------------------------
+#   Init's
+#-----------------------------------------
+
+paths = classes.dir_paths.Paths()
+
