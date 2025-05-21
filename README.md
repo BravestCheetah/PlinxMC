@@ -1,2 +1,13 @@
 # PlinxMC
-An Offline And Quick Minecraft Launcher Made In Python
+*The offline and fast minecraft launcher*
+
+PlinxMC is a custom Minecraft launcher made in Python using CustomTkinter and Minecraft-launcher-lib
+
+# How to install
+*isntallation, where the journey begins...*
+To install the launcher download the executeable (PlinxMC.exe) at [The latest release](https://github.com/BravestCheetah/PlinxMC/releases) and run it, no folder or directory needed (note that versions and config files will be saved at appdata/roaming/PLinxMC)
+
+# How to contribute
+Contribution guidelines can be found [here](about:blank)
+
+# How to build / compile yourself
