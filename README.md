@@ -12,4 +12,4 @@ Contribution guidelines can be found [here](https://github.com/BravestCheetah/Pl
 
 # How to build / compile yourself
 
-Building the .exe or any other application format depends on the format, building information can be found [here](https://github.com/BravestCheetah/PlinxMC/docs/build.md)
+Building the .exe or any other application format depends on the format, building information can be found [here](https://github.com/BravestCheetah/PlinxMC/blob/main/docs/build.md)
