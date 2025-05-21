@@ -9,6 +9,8 @@ import classes.installations
 dir_paths = classes.dir_paths.Dirs()
 asset_paths = classes.asset_paths.Assets()
 
+# a566ff
+
 class PlinxMC(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -16,7 +18,7 @@ class PlinxMC(ctk.CTk):
         self.title("PlinxMC - A lightweight Launcher")
         self.geometry("1000x600")
         ctk.set_appearance_mode("dark")
-        self.configure()
+        self.configure(fg_color='#663f9e')
 
         self.grid_columnconfigure((0, 1), weight=1)
 
