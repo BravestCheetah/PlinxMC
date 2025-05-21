@@ -8,4 +8,11 @@ Note that all contributors, independent of the scale of the contribution will be
 head developer of the project.
 
 ### Contribution Guidelines
-* Contribution
+* All additions and / or removal of code or assets need to have a reason, no unnecessary code or images which doesnt do anything should be added.
+* No illegal changes / content
+* No changes that move the project away from its main purpouse
+* Complete revamps of different parts of the project has to be explained *why* and *how* its better / should be changed
+* All changes should be explained, no matter the size the change should be explained and why it is changed (for example: "bugfix: fixed bug where it doesnt start download, fixed it by changing bla bla bla")
+* All changes should be made for the latest version of the release, outdated changes or changes that are no longer able to cleany merge **will be rejected**
+
+Happy contributing!
